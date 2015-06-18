@@ -11,15 +11,35 @@
 }
 
 body{
-	background:#fff;
-}
+	background:#000;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+}
 
 .wrap{
 	width:500px;
 	margin:0 auto;
 	@include breakpoint('mobile'){
 		width:100%;
+	}
+
+	h1{
+		// text-align: center;
+		// color:#fff;
+		// padding:30px;
+		//   letter-spacing: -2px;
+  // line-height: 1;
+  // text-shadow: 4px 3px 0px #1d9d74, 9px 8px 0px rgba(0, 0, 0, 0.15);
+
+
+  		font:normal 'league_gothic', Arial, Helvetica, sans-serif;
+        position:relative;
+	    text-align:center;
+        color:#fff;
+        text-shadow:none;
+        padding:30px;
+
+        text-shadow: 2px 2px 5px #4D4D4D;
 	}
 
 	.video-container {
