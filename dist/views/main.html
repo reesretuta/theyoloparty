@@ -1,1 +1,1 @@
-<ul id="videolist"> <li ng-repeat="v in videos"> asdf </li> </ul>
+<div class="video-container" ng-repeat="v in videos"> <!-- <img ng-src="http://img.youtube.com/vi/{{v.youtubeId}}/maxresdefault.jpg"> --> <iframe ng-src="{{v.youtubeId | youtubeEmbedUrl }}" frameborder="0" allowfullscreen></iframe> </div>
