@@ -1,1 +1,4 @@
-<div class="video-container" ng-repeat="v in videos"> <!-- <img ng-src="http://img.youtube.com/vi/{{v.youtubeId}}/maxresdefault.jpg"> --> <iframe ng-src="{{v.youtubeId | youtubeEmbedUrl }}" frameborder="0" allowfullscreen></iframe> </div>
+<div class="video-container" ng-repeat="v in videos" ng-click="track('{{v.id}}')">
+  <!-- <img ng-src="http://img.youtube.com/vi/{{v.youtubeId}}/maxresdefault.jpg"> -->
+  <iframe ng-src="{{v.youtubeId | youtubeEmbedUrl }}" frameborder="0" allowfullscreen></iframe>
+</div>
