@@ -1,0 +1,27 @@
+# Required
+# --------
+
+scheme: sftp
+host: lionstepx2.com
+username: root
+password: Ghrks45#@kghDY
+
+# Optional
+# --------
+
+# Remote path
+path: /home/theyolo.party
+
+# Remote file name in which the current revision is stored
+revision_file: .revision
+
+# These files (from Git) will not be uploaded during a deploy
+exclude:
+    - .gitignore
+    - dandelion.yml
+
+# These files (from your working directory) will be uploaded on every deploy
+# additional:
+#     - public/css/print.css
+#     - public/css/screen.css
+#     - public/js/main.js
