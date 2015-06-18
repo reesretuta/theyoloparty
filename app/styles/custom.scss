@@ -11,13 +11,16 @@
 }
 
 body{
-	background:#000;
+	background-image: url('../images/blackwood.jpg'), url('../images/blackwood.jpg');;
+	background-repeat: repeat-x;
+	background-position: top center, bottom center;
+	background-color:#101010;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 }
 
 .wrap{
-	width:500px;
+	width:600px;
 	margin:0 auto;
 	@include breakpoint('mobile'){
 		width:100%;
@@ -32,14 +35,20 @@ body{
   // text-shadow: 4px 3px 0px #1d9d74, 9px 8px 0px rgba(0, 0, 0, 0.15);
 
 
-  		font:normal 'league_gothic', Arial, Helvetica, sans-serif;
+  		font-family: Arial, Helvetica, sans-serif;
+  		font-size: 35px;
+  		font-weight:bold;
         position:relative;
+        letter-spacing: 2px;
 	    text-align:center;
         color:#fff;
         text-shadow:none;
-        padding:30px;
+        padding:25px;
 
         text-shadow: 2px 2px 5px #4D4D4D;
+
+        color: #fff;
+  		text-shadow: 0px 0px 45px #FED3B2;
 	}
 
 	.video-container {
@@ -48,7 +57,10 @@ body{
 		padding-top:30px;
 		height:0;
 		overflow:hidden;
-		margin-bottom:10px;
+		margin-bottom:30px;
+		-webkit-box-shadow: 0px 0px 10px 0px #FFFFFF;
+		box-shadow: 0px 0px 10px 0px #FFFFFF;
+
 
 		iframe, object, embed {
 			position:absolute;

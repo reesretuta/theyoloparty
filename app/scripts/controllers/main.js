@@ -10,4 +10,11 @@
 angular.module('theyolopartyApp')
   .controller('MainCtrl', function ($scope) {
     $scope.videos = videos;
+
+    $scope.track = function(id){
+    	console.log(id);
+    };
+
+
+
   });
